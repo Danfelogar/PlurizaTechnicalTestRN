@@ -40,7 +40,6 @@ export default function useDetails() {
       currency: 'USD',
     });
     dispatch(getCurrencyConversionInUSD(valueConvery));
-    console.log({valueConvery});
   }
 
   return {
