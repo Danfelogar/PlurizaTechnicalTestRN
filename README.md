@@ -1,4 +1,4 @@
-# React Native TVMaze App
+# PlurizaTechnicalTestRN App
 
 This is a React Native application to display information about cryptocurrencies and their value in dollars. Data is obtained from [public s3 bucket API](https://pluriza.s3.us-east-1.amazonaws.com/response.json).
 
@@ -15,11 +15,12 @@ yarn
 ```
 
 **Install IOS Pods**
-
+cd ios to navigate to the ios folder.
 ```
-cd ios && pod install
+ install Bundler
+bundle exec pod install
 ```
-
+ to install the iOS dependencies managed by CocoaPods.
 **Run IOS**
 
 Remember to have an iPhone 14 Pro Max in the emulator or alternatively delete the line of code in package.json
