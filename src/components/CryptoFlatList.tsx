@@ -29,6 +29,7 @@ export default function CryptoFlatList() {
 
   return (
     <FlatList
+      testID="flat-list-crypto"
       data={isLoading ? [] : cryptocurrencyList}
       refreshing={isLoading}
       onRefresh={onTryAgain}

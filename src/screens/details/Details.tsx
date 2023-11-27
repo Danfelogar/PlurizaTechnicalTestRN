@@ -167,6 +167,7 @@ export default function Details({route, navigation}: Props): JSX.Element {
               <View style={firstVariantBorder}>
                 <TouchableOpacity
                   style={btnNumberSpace}
+                  testID="btn-1"
                   onPress={() => handlePress('1')}>
                   <Text style={textNumberPath}>1</Text>
                 </TouchableOpacity>
@@ -174,6 +175,7 @@ export default function Details({route, navigation}: Props): JSX.Element {
               <View style={firstVariantBorder}>
                 <TouchableOpacity
                   style={btnNumberSpace}
+                  testID="btn-2"
                   onPress={() => handlePress('2')}>
                   <Text style={textNumberPath}>2</Text>
                 </TouchableOpacity>
@@ -181,6 +183,7 @@ export default function Details({route, navigation}: Props): JSX.Element {
               <View style={secondVariantBorder}>
                 <TouchableOpacity
                   style={btnNumberSpace}
+                  testID="btn-3"
                   onPress={() => handlePress('3')}>
                   <Text style={textNumberPath}>3</Text>
                 </TouchableOpacity>
@@ -265,6 +268,7 @@ export default function Details({route, navigation}: Props): JSX.Element {
                 singleCryptoCurrency.current_price,
               );
             }}
+            testID="btn-convert-currency"
             activeOpacity={0.8}
             style={btnAcc}>
             <Text

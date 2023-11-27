@@ -3,8 +3,12 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "npx tsc && jest --coverage && react-native run-android",
-    "ios": "npx tsc && jest --coverage && react-native run-ios --simulator='iPhone 14 Pro Max'",
+    "android": "npx tsc && jest --coverage --testPathIgnorePatterns=starter.test.js && react-native run-android",
+    "android-e2e-build": "detox build --configuration android.emu.debug",
+    "android-e2e-test": "detox test --configuration android.emu.debug --cleanup",
+    "ios": "npx tsc && jest --coverage --testPathIgnorePatterns=starter.test.js && react-native run-ios --simulator='iPhone 14 Pro Max'",
+    "ios-e2e-build": "detox build --configuration ios.sim.debug",
+    "ios-e2e-test": "detox test --configuration ios.sim.debug --cleanup",
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest"
@@ -46,6 +50,7 @@
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "babel-jest": "^29.7.0",
     "babel-plugin-macros": "^3.1.0",
+    "detox": "^20.13.5",
     "eslint": "^8.0.1",
     "eslint-config-standard-with-typescript": "^40.0.0",
     "eslint-plugin-import": "^2.25.2",

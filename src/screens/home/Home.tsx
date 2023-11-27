@@ -20,7 +20,7 @@ export default function Home(): JSX.Element {
   return (
     <View testID="container-home" style={containerHome}>
       <StandardWrapper>
-        <Text style={mainTitle}>
+        <Text testID="xxx" style={mainTitle}>
           Today's Rates &nbsp;
           <Icon
             testID="cash-icon"

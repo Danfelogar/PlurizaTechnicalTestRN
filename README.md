@@ -22,6 +22,8 @@ cd ios && pod install
 
 **Run IOS**
 
+Remember to have an iPhone 14 Pro Max in the emulator or alternatively delete the line of code in package.json
+
 ```
 yarn ios
 ```
@@ -32,6 +34,24 @@ yarn ios
 yarn android
 ```
 
+**Build Detox(test end 2 end)**
+
+```
+yarn android-e2e-build
+```
+```
+yarn ios-e2e-build
+```
+
+**Run Detox(test end 2 end)**
+
+```
+yarn android-e2e-test
+```
+```
+yarn ios-e2e-test
+```
+
 ### 🛠 Tech and Libraries
 
 - [React Native](https://reactnative.dev/)
@@ -39,6 +59,7 @@ yarn android
 - [React Navigation](https://reactnavigation.org/): Routing and navigation
 - [Redux Toolkit](https://redux-toolkit.js.org/Í): Data storage efficient Redux
 - [Axios](https://github.com/axios/axios): Promise based HTTP client
+- [Detox](https://wix.github.io/Detox/): Gray box end-to-end testing and automation framework for React Native apps
 
 ### App Screenshots
 
@@ -47,3 +68,6 @@ yarn android
 |   Home Screen   |   ![](src/assets/Screenshot_android_1.png)   |   ![](src/assets/Screenshot_ios_1.png)   |
 | Details Screen  | ![](src/assets/Screenshot_android_2.png)     | ![](src/assets/Screenshot_ios_2.png)     |
 | Details Results |  ![](src/assets/Screenshot_android_3.png)    |  ![](src/assets/Screenshot_ios_3.png)    |
+
+# Link-video-demo-app with Detox e2e
+[![Alt text](https://img.youtube.com/vi/_NfrFiaIbNM/0.jpg)](https://www.youtube.com/watch?v=_NfrFiaIbNM)
